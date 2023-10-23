@@ -56,7 +56,7 @@ jobs:
           cp output/maxmind/Country.mmdb release
           cp -fpPR output/text release
 
-      - name: Verify Country.mmdb and Country-lite.mmdb files
+      - name: Verify Country.mmdb files
         run: |
           go install -v github.com/maxmind/mmdbverify@latest
           $(go env GOPATH)/bin/mmdbverify -file release/Country.mmdb
