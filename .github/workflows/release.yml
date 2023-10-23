@@ -65,7 +65,7 @@ jobs:
         run: |
           cd v2ray-geosite
           mkdir data
-          cp ../release/url-block-list.txt data/url-block-list
+          cp ../release/ru-block.txt data/ru-block
 
           go run ./ --datapath=data --outputdir=../release --outputname=geosite.dat
 
