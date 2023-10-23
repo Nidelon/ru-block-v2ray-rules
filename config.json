@@ -1,0 +1,39 @@
+{
+    "input": [
+        {
+            "type": "text",
+            "action": "add",
+            "args": {
+                "name": "ru-block",
+                "uri": "ip-block-list.txt"
+            }
+        },
+        {
+            "type": "private",
+            "action": "add"
+        }
+    ],
+    "output": [
+        {
+            "type": "v2rayGeoIPDat",
+            "action": "output",
+            "args": {
+                "outputName": "geoip.dat"
+            }
+        },
+        {
+            "type": "maxmindMMDB",
+            "action": "output",
+            "args": {
+                "outputName": "Country.mmdb",
+                "overwriteList": [
+                    "ru-block"
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "action": "output"
+        }
+    ]
+}
