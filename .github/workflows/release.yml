@@ -60,7 +60,6 @@ jobs:
         run: |
           go install -v github.com/maxmind/mmdbverify@latest
           $(go env GOPATH)/bin/mmdbverify -file release/Country.mmdb
-          $(go env GOPATH)/bin/mmdbverify -file release/Country-lite.mmdb
 
       - name: Generate geosite.dat file
         run: |
