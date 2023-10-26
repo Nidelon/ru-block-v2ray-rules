@@ -80,8 +80,8 @@ jobs:
       - name: Generate Release Notes
         run: | 
           echo "* Обновлён ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
-          echo "* Кол-во заблокированных сайтов - ${{ env.RU_BLOCK }}" > RELEASE_NOTES
-          echo "* Кол-во blocked_by_site списка - ${{ env.BLOCKED_SITE }}" > RELEASE_NOTES
+          echo "* Кол-во заблокированных сайтов - ${{ env.RU_BLOCK }}" >> RELEASE_NOTES
+          echo "* Кол-во blocked_by_site списка - ${{ env.BLOCKED_SITE }}" >> RELEASE_NOTES
 
       - name: Push assets to release branch
         run: |
