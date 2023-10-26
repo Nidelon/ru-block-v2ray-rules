@@ -46,7 +46,14 @@ jobs:
       - name: Get block URL list
         run: |
           curl -sSL https://antifilter.download/list/domains.lst -o ru-block.txt
+          echo "RU_BLOCK=$(wc -l < ru-block.txt)" >> $GITHUB_ENV
           mv ru-block.txt release
+
+      - name: Get blocked_by_site URL list
+        run: |
+          curl -sSL https://raw.githubusercontent.com/Nidelon/ru-block-v2ray-rules/blocked_by_site/block_list -o blocked_by_site.txt
+          echo "BLOCKED_SITE=$(wc -l < blocked_by_site.txt)" >> $GITHUB_ENV
+          mv blocked_by_site.txt release
 
       - name: Generate geoip.dat and Country.mmdb files
         run: |
@@ -66,6 +73,7 @@ jobs:
           cd v2ray-geosite
           mkdir data
           cp ../release/ru-block.txt data/ru-block
+          cp ../release/blocked_by_site.txt data/blocked_by_site
 
           go run ./ --datapath=data --outputdir=../release --outputname=geosite.dat
 
@@ -77,7 +85,9 @@ jobs:
 
       - name: Generate Release Notes
         run: | 
-          echo "* Updated on ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
+          echo "* Обновлён ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
+          echo "* Кол-во заблокированных сайтов - ${{ env.RU_BLOCK }}" > RELEASE_NOTES
+          echo "* Кол-во blocked_by_site списка - ${{ env.BLOCKED_SITE }}" > RELEASE_NOTES
 
       - name: Push assets to release branch
         run: |
