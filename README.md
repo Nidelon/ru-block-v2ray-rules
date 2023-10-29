@@ -49,7 +49,7 @@ sudo rm -rf /usr/local/x-ui/bin/geoip_RU.dat && sudo curl -sSL https://github.co
 ![image](https://github.com/Nidelon/ru-block-v2ray-rules/assets/48694850/16c0215f-568d-44bb-9202-fc39eb695154)
 
 ## TODO
-Сделать список сайтов которые блокируют РФ пользователей. ("Как тестовый сделаю на `"ext:geosite_RU.dat:blocked_by_site"`)
+Сделать список сайтов которые блокируют РФ пользователей. ("Как тестовый сделаю на `"ext:geosite_RU.dat:blocked_by_site"`б алярма, не работает, возможно нужен список ip)
 
 ## Алярма
 https://github.com/Chocolate4U/Iran-v2ray-rules/ - Основа, которую я переписал, упростив её.
