@@ -43,6 +43,9 @@ jobs:
           echo "RU_BLOCK=$(wc -l < ru-block.txt)" >> $GITHUB_ENV
           mv ru-block.txt release
 
+      - name: Get block IP list
+        run: curl -sSL https://raw.githubusercontent.com/Nidelon/ru-block-v2ray-rules/blocked_by_site/ip_blocked_by_site -o ip_blocked_by_site.txt
+
       - name: Get blocked_by_site URL list
         run: |
           curl -sSL https://raw.githubusercontent.com/Nidelon/ru-block-v2ray-rules/blocked_by_site/block_list -o blocked_by_site.txt
