@@ -34,9 +34,3 @@ jobs:
           git remote set-url origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f origin blocked_by_site
 
-      - name: Purge jsDelivr CDN cache
-        run: |
-          cd release || exit 1
-          for file in $(ls); do
-            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
-          done
