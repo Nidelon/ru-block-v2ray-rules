@@ -3,9 +3,8 @@ name: Convert sites to ip addresses
 on:
   workflow_dispatch:
   push:
-    branches: [ "blocked_by_site" ]
-  pull_request:
-    branches: [ "blocked_by_site" ]
+    branches:
+    - blocked_by_site
 
 jobs:
   build:
