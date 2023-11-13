@@ -29,7 +29,6 @@ jobs:
           [ -f ./ip_blocked_by_site ] || exit 1
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b blocked_by_site
           git add ./ip_blocked_by_site
           git commit -m "${{ env.RELEASE_NAME }}"
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
