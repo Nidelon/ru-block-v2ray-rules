@@ -1,0 +1,7 @@
+addReviewers: true
+addAssignees: true
+
+reviewers:
+  - Nidelon
+
+numberOfReviewers: 0
