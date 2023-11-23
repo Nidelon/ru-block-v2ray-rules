@@ -48,8 +48,12 @@ sudo rm -rf /usr/local/x-ui/bin/geoip_RU.dat && sudo curl -sSL https://github.co
 ```
 ![image](https://github.com/Nidelon/ru-block-v2ray-rules/assets/48694850/16c0215f-568d-44bb-9202-fc39eb695154)
 
+Также обязательно проверьте настройку `Настройка стратегии маршрутизации доменов`, должно стоять `IPIfNonMatch` для маршрутизации через WARP.
+![image](https://github.com/Nidelon/ru-block-v2ray-rules/assets/48694850/f637b498-66d7-47b7-904e-8f201887111d)
+
 ## TODO
-Сделать список сайтов которые блокируют РФ пользователей. (По сайту `"ext:geosite_RU.dat:blocked_by_site"`, по ip `"ext:geoip_RU.dat:ip_blocked_by_site"`, сами списки очень маленькие. Фильтрация по WARP работает, но Cloudflare обнаруживает регион другим методом, каким? Я без понятия.)
+1. Сделать список сайтов которые блокируют РФ пользователей. (По сайту `"ext:geosite_RU.dat:blocked_by_site"`, по ip `"ext:geoip_RU.dat:ip_blocked_by_site"`, сами списки очень маленькие. Фильтрация по WARP работает, но Cloudflare обнаруживает регион другим методом, каким? Я без понятия.)
+2. Сделать список проблем и возможных решений в README.
 
 ## Алярма
 https://github.com/Chocolate4U/Iran-v2ray-rules/ - Основа, которую я переписал, упростив её.
