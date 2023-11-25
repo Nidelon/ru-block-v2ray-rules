@@ -11,6 +11,8 @@ https://antifilter.download/ - Списки блокировок которые 
 Использовать правило `"ext:geosite_RU.dat:ru-block"` для сайтов или `"ext:geoip_RU.dat:ru-block"` для ip адресов.
 
 ### Если не установлен, то инструкция с авто-апдейтом для 3x-ui
+Установить [3x-ui](https://github.com/MHSanaei/3x-ui?tab=readme-ov-file#install--upgrade) и [WARP](https://github.com/MHSanaei/3x-ui#warp-configuration-optional) на него.
+
 Ввести в консоль:
 ```
 sudo rm -rf /usr/local/x-ui/bin/geosite_RU.dat && sudo curl -sSL https://github.com/Nidelon/ru-block-v2ray-rules/raw/release/geosite.dat -o /usr/local/x-ui/bin/geosite_RU.dat && sudo chmod 744 /usr/local/x-ui/bin/geosite_RU.dat
