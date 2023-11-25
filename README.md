@@ -11,7 +11,7 @@ https://antifilter.download/ - Списки блокировок которые 
 Использовать правило `"ext:geosite_RU.dat:ru-block"` для сайтов или `"ext:geoip_RU.dat:ru-block"` для ip адресов.
 
 ### Если не установлен, то инструкция с авто-апдейтом для 3x-ui
-Установить [3x-ui](https://github.com/MHSanaei/3x-ui?tab=readme-ov-file#install--upgrade) и [WARP](https://github.com/MHSanaei/3x-ui#warp-configuration-optional) на него.
+Установить [3x-ui](https://github.com/MHSanaei/3x-ui?tab=readme-ov-file#install--upgrade) и [WARP](https://github.com/MHSanaei/3x-ui#warp-configuration-optional).
 
 Ввести в консоль:
 ```
