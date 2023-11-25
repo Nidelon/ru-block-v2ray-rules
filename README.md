@@ -52,7 +52,7 @@ sudo rm -rf /usr/local/x-ui/bin/geoip_RU.dat && sudo curl -sSL https://github.co
 ![image](https://github.com/Nidelon/ru-block-v2ray-rules/assets/48694850/f637b498-66d7-47b7-904e-8f201887111d)
 
 ## TODO
-1. Сделать список сайтов которые блокируют РФ пользователей. (По сайту `"ext:geosite_RU.dat:blocked_by_site"`, по ip `"ext:geoip_RU.dat:ip_blocked_by_site"`, сами списки очень маленькие. Фильтрация по WARP работает, но Cloudflare обнаруживает регион другим методом, каким? Я без понятия.)
+1. Сделать список сайтов которые блокируют РФ пользователей. (По сайту `"ext:geosite_RU.dat:blocked_by_site"`, по ip `"ext:geoip_RU.dat:ip_blocked_by_site"`, сами списки очень маленькие. Фильтрация по WARP работает, но Cloudflare обнаруживает регион другим методом, каким? Возможно IPv6 не проксируется, проверю позже.)
 2. Сделать список проблем и возможных решений в README.
 
 ## Алярма
