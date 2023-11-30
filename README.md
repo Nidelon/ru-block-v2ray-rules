@@ -56,6 +56,7 @@ sudo rm -rf /usr/local/x-ui/bin/geoip_RU.dat && sudo curl -sSL https://github.co
 ## TODO
 1. Сделать список сайтов которые блокируют РФ пользователей. (По сайту `"ext:geosite_RU.dat:blocked_by_site"`, по ip `"ext:geoip_RU.dat:ip_blocked_by_site"`, сами списки очень маленькие. Фильтрация по WARP работает, но Cloudflare обнаруживает регион другим методом, каким? Возможно IPv6 не проксируется, проверю позже.)
 2. Сделать список проблем и возможных решений в README.
+3. Исправить cron скрипт, при ошибке скачивания файл удаляется.
 
 ## Алярма
 https://github.com/Chocolate4U/Iran-v2ray-rules/ - Основа, которую я переписал, упростив её.
