@@ -17,6 +17,8 @@ https://antifilter.download/ - Списки блокировок которые 
 <details>
 <summary>Если не установлен, то инструкция с авто-апдейтом для 3x-ui</summary>
 
+Заранее предупреждаю, что инструкция была написана на скорую руку, и возможно будет необходимо заменить шаблон WARP (см. Возможные проблемы).
+
 Установить [3x-ui](https://github.com/MHSanaei/3x-ui?tab=readme-ov-file#install--upgrade) и [WARP](https://github.com/MHSanaei/3x-ui?tab=readme-ov-file#warp-configuration)
 
 Ввести в консоль:
