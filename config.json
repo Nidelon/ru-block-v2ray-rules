@@ -9,14 +9,6 @@
             }
         },
         {
-            "type": "text",
-            "action": "add",
-            "args": {
-                "name": "ip_blocked_by_site",
-                "uri": "ip_blocked_by_site.txt"
-            }
-        },
-        {
             "type": "private",
             "action": "add"
         }
