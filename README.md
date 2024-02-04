@@ -115,6 +115,7 @@ sudo rm -rf /usr/local/x-ui/bin/geoip_RU.dat && sudo curl -sSL https://github.co
 
 ## TODO
 1. Исправить cron скрипт, при ошибке скачивания файлы удаляются.
+2. Сделать генерацию geosite и geoip совместимых с sing-box, а также srs формат списков.
 
 ## Алярма
 https://github.com/Chocolate4U/Iran-v2ray-rules/ - Основа, которую я переписал, упростив её.
