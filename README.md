@@ -1,5 +1,11 @@
 # ru-block-v2ray-rules
 [![Generate v2ray routing rules](https://github.com/Nidelon/ru-block-v2ray-rules/actions/workflows/release.yml/badge.svg)](https://github.com/Nidelon/ru-block-v2ray-rules/actions/workflows/release.yml)
+
+## ⚠️ Предупреждение ⚠️
+Так как я начал использовать Aeza для vpn, то итоговая скорость выходит быстрее и стабильнее чем у этого костыля.
+Кто захочет, может использовать мою [рефералку](https://aeza.net/?ref=450474) с бонусом пополнения баланса на 15%.
+Сам же он с поддержкой Outline и Wireguard за 212 руб. в месяц.
+
 ## Что это?
 Список блокировок Роскомнадзора в GeoIP и GeoSite для xray или любого другого маршрутизатора трафика принимающего geosite файлы.
 Делал для прокси WARP в x3-ui под свои нужды.
