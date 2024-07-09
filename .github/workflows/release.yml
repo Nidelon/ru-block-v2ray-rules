@@ -45,7 +45,7 @@ jobs:
 
       - name: Generate geoip.dat and Country.mmdb files
         run: |
-          go install -v github.com/Loyalsoldier/geoip@latest
+          go install -v github.com/Nidelon/geoip@latest
           $(go env GOPATH)/bin/geoip -c config.json
           cp output/dat/geoip.dat release
           cp output/maxmind/Country.mmdb release
