@@ -1,17 +1,18 @@
 # ru-block-v2ray-rules
 [![Generate v2ray routing rules](https://github.com/Nidelon/ru-block-v2ray-rules/actions/workflows/release.yml/badge.svg)](https://github.com/Nidelon/ru-block-v2ray-rules/actions/workflows/release.yml)
 
-## ⚠️ Предупреждение ⚠️
-Рекомендую использовать vds или vpn от Aeza, у них все стабильно работает.
-Кто захочет, может использовать мою [рефералку](https://aeza.net/?ref=450474) с бонусом пополнения баланса на 15% на сутки.
-
 ## Что это?
-Список блокировок Роскомнадзора в GeoIP и GeoSite для xray или любого другого маршрутизатора трафика принимающего geosite файлы.
-Делал для прокси WARP в x3-ui под свои нужды.
+Список блокировок Роскомнадзора в GeoIP и GeoSite для xray или любого другого маршрутизатора трафика принимающего geosite и geoip файлы.
 
 https://antifilter.download/ - Списки блокировок которые используются.
 
-## Как использовать?
+## ⚠️ Предупреждение ⚠️
+Инструкции далее я оставил для архива, на данный момент они не работают, сам репозиторий не переводится в архив что-бы генерация файлов не останавливалась для тех кому нужно.
+
+Рекомендую использовать VDS сервер или VPN (Outline) от Aeza, у них стабильно работают сервера.
+Кто захочет, может использовать мою [рефералку.](https://aeza.net/?ref=450474)
+
+## Как использовать? ⚠️ НЕАКТУАЛЬНО ⚠️
 
 <details>
 <summary>Если уже установлен</summary>
@@ -69,7 +70,7 @@ sudo rm -rf /usr/local/x-ui/bin/geoip_RU.dat && sudo curl -sSL https://github.co
 
 </details>
 
-## Возможные проблемы.
+## Возможные проблемы. ⚠️ НЕАКТУАЛЬНО ⚠️
 
 <details>
 <summary>Не проксируется трафик через WARP.</summary>
@@ -119,8 +120,8 @@ sudo rm -rf /usr/local/x-ui/bin/geoip_RU.dat && sudo curl -sSL https://github.co
 </details>
 
 ## TODO
-1. Исправить cron скрипт, при ошибке скачивания файлы удаляются.
-2. Сделать генерацию geosite и geoip совместимых с sing-box, а также srs формат списков.
+1. Сделать генерацию geosite и geoip совместимых с sing-box, а также srs формат списков.
+2. Эффективная очистка списков от мертвых сайтов для уменьшения размера файлов.
 
 ## Алярма
 https://github.com/Chocolate4U/Iran-v2ray-rules/ - Основа, которую я переписал, упростив её.
