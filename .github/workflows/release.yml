@@ -50,7 +50,7 @@ jobs:
           $(go env GOPATH)/bin/geoip convert -c config.json
           mv output/dat/geoip.dat release
           mv output/maxmind/Country.mmdb release
-          mv -fpPR output/text release
+          mv -f output/text release
 
       - name: Verify Country.mmdb files
         run: |
