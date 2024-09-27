@@ -5,7 +5,7 @@
             "action": "add",
             "args": {
                 "name": "ru-block",
-                "uri": "ip-block-list.txt"
+                "uri": "./ip-block-list.txt"
             }
         },
         {
@@ -18,7 +18,8 @@
             "type": "v2rayGeoIPDat",
             "action": "output",
             "args": {
-                "outputName": "geoip.dat"
+                "outputName": "geoip.dat",
+                "wantedList": ["ru-block"]
             }
         },
         {
@@ -26,9 +27,7 @@
             "action": "output",
             "args": {
                 "outputName": "Country.mmdb",
-                "overwriteList": [
-                    "ru-block"
-                ]
+                "overwriteList": ["ru-block"]
             }
         },
         {
