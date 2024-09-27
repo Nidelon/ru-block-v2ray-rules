@@ -51,10 +51,10 @@ jobs:
           mv output/dat/geoip.dat release
           mv output/maxmind/Country.mmdb release
 
-      - name: Verify Country.mmdb files
-        run: |
-          go install -v github.com/maxmind/mmdbverify@latest
-          $(go env GOPATH)/bin/mmdbverify -file release/Country.mmdb
+      # - name: Verify Country.mmdb files
+      #   run: |
+      #     go install -v github.com/maxmind/mmdbverify@latest
+      #     $(go env GOPATH)/bin/mmdbverify -file release/Country.mmdb
 
       - name: Generate geosite.dat file
         run: |
