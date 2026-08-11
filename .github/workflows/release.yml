@@ -42,6 +42,7 @@ jobs:
       - name: Get a list of blocked domains
         run: |
           curl -sSL https://antifilter.download/list/domains.lst -o ru-block.txt
+          sed -i '/ /d' ru-block.txt
           echo "NUM_DOMAIN=$(wc -l < ru-block.txt)" >> $GITHUB_ENV
 
       - name: Generate geoip.dat and Country.mmdb files
